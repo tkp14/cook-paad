@@ -1,0 +1,26 @@
+<header>
+  <div class="nav-header-logo col-md-2">
+    <%= link_to(image_tag("header_logo.jpg", :alt => "ロゴ"), root_url, id: 'logo') %>
+  </div>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#" tabindex="-1" aria-disabled="false">料理アプリとは</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" tabindex="-1" aria-disabled="false">お問い合わせ</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">メニュー</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">使い方</a></li>
+        <li><a class="dropdown-item" href="#">お知らせ</a></li>
+        <li><a class="dropdown-item" href="#">管理人について</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">利用規約</a></li>
+      </ul>
+    </li>
+    <li class="nav-item nav-login">
+      <a class="nav-link active" aria-current="page" href="#">ログイン</a>
+    </li>
+  </ul>
+</header>
