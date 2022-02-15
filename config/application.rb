@@ -10,7 +10,9 @@ module CookPaad
   class Application < Rails::Application
     config.generators do |g|
       config.load_defaults 6.1
-      g.test_framework :rspec,
+        g.assets false          # CSS, JavaScriptファイルは生成しない
+        g.test_framework false  # testファイルは生成しない
+        g.test_framework :rspec,
         controller_specs: false,
         view_specs: false,
         helper_specs: false,
