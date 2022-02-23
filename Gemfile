@@ -16,12 +16,15 @@ gem 'bootstrap-sass'
 # gem 'image_processing', '~> 1.2'
 
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'faker'
 
 group :development, :test do
+  gem 'pry-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'rails-controller-testing'
   gem 'rubocop-airbnb'
+  gem "factory_bot_rails"
 end
 
 group :development do

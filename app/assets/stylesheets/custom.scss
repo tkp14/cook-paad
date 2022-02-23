@@ -56,6 +56,7 @@ p {
 
 // ヘッダー
 header {
+  margin-bottom: 20px;
   #logo {
     float: left;
     padding-top: 0;
@@ -70,7 +71,7 @@ header {
     font-size: 16px;
   }
   .nav {
-    justify-content: end;
+    justify-content: flex-end;
     .nav-item {
       padding-top: 5px;
     }
@@ -89,4 +90,39 @@ footer {
   small {
     float: center;
   }
+}
+
+#error_explanation  {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+// forms
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #bbb;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+// button
+
+.btn {
+  padding: 10px;
+  margin-top: 5px;
 }
